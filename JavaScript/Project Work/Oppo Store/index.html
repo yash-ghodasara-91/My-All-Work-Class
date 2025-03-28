@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPPO Store</title>
+    <!--css-->
+    <link rel="stylesheet" href="./style.css">
+    <!--css-->
+
+    <!--tailwind css-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!--tailwind css-->
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--favicon-->
+
+</head>
+<body class="bg-[#F8F9FA]">  
+    <!--msg-->
+    <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center absolute fixed bottom-40 right-10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#000" d="M18.174 1.826c-1.102-1.102-2.082-.777-2.082-.777L7.453 9.681L6 14l4.317-1.454l8.634-8.638s.324-.98-.777-2.082m-7.569 9.779l-.471.47l-1.473.5a2.2 2.2 0 0 0-.498-.74a2.2 2.2 0 0 0-.74-.498l.5-1.473l.471-.47s.776-.089 1.537.673c.762.761.674 1.538.674 1.538M16 17H3V4h5l2-2H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-7l-2 2z"/></svg>
+    </div>
+    <!--msg-->
+
+    <!--robo-->
+    <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center absolute fixed bottom-20 right-10">
+        <img src="./img/robo icon.svg" alt="">
+    </div>
+    <!--robo-->
+
+    <!--nav-2-->
+     <div class=" m-2 pt-3 pb-3 me-8 mt-0 flex fixed bg-slate-200 z-10 w-full items-center justify-between text-sm  max-sm:px-10 max-sm:w-188 max-md:w-345 max-md:mx-0 max-md:px-10 max-lg:w-351 max-lg:px-10 max-lg:mx-0 max-xl:mx-0 max-xl:px-10 max-xl:w-351 max-2xl:mx-0 max-2xl:px-10 max-2xl:w-374">
+        <div class="flex items-center gap-7">
+            <img src="./img/logo.svg" alt="" class="w-28 ms-10">
+            <ul class="ul flex text-[#0000008C] gap-4 font-medium max-sm:hidden">
+                <li class="hover:text-black"><a href="#phone">Phones</a></li>
+                <li class="hover:text-black"><a href="#Offers">Offers</a></li>
+                <li class="hover:text-black"><a href="#highmobile">high Prices</a></li>
+                <li class="hover:text-black"><a href="#lowmobile">Low Prices</a></li>
+                <li class="hover:text-black"><a href="#audio">About OPPO</a></li>
+                <li class="hover:text-black"><a href="#accessories">Accessories</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="flex items-center p-4">
+                <svg id="menu-toggle" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer max-sm:flex hidden" width="30" height="30" viewBox="0 0 24 24"><path fill="#000" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+                
+                <div class="hidden max-sm:block menu bg-slate-200 fixed top-0 left-0 w-2/7 h-full shadow-lg p-6 text-gray-800">
+                    <button id="close-menu" class="mb-6 text-lg font-bold flex items-center gap-2">
+                        ✖ Close
+                    </button>
+                    <ul class="space-y-5 text-gray-700">
+                        <li class="hover:text-black text-lg font-medium"><a href="#phone">Phones</a></li>
+                        <li class="hover:text-black text-lg font-medium"><a href="#Offers">Offers</a></li>
+                        <li class="hover:text-black text-lg font-medium"><a href="#highmobile">high Prices</a></li>
+                        <li class="hover:text-black text-lg font-medium"><a href="#lowmobile">Low Prices</a></li>
+                        <li class="hover:text-black text-lg font-medium"><a href="#audio">About OPPO</a></li>
+                        <li class="hover:text-black text-lg font-medium"><a href="#accessories">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden max-sm:flex" width="24" height="24" viewBox="0 0 24 24"><g fill="#000" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.5 5.5a5 5 0 1 0 0 10a5 5 0 0 0 0-10m-6.5 5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0"/><path d="M14.47 14.47a.75.75 0 0 1 1.06 0l4 4a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06"/></g></svg>
+            <div class="flex gap-1 py-1 px-3 rounded-full hover:border-gray-300 hover:border-1 max-sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none" stroke="#0000008C" stroke-width="1"><circle cx="11" cy="11" r="5.5"/><path stroke-linecap="round" stroke-linejoin="round" d="m15 15l4 4"/></g></svg>
+                <input type="search" placeholder="Find X8 Series" class="text-xs w-45">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="get" width="26" height="26" viewBox="0 0 256 256"><path fill="#000" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24M74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0M96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32m97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="get" width="26" height="26" viewBox="0 0 16 16"><path fill="none" stroke="#000" stroke-linejoin="round" d="M10.5 7V4a2.5 2.5 0 0 0-5 0v3m7-2.5v9h-9v-9z" stroke-width="1"/></svg>
+            <a href="#" class="app font-medium max-sm:hidden me-10">Get Benefit on APP</a>
+        </div>
+     </div>
+    <!--nav-2-->
+
+    <!--bg-->
+    <div class="bg w-full h-115 max-sm:w-188 max-sm:bg-center max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <div class="pl-26 pt-25 w-180 max-sm:pl-10 max-sm:w-110">
+            <h1 class="text-[44px] font-medium max-sm:text-[30px]">Share Joy USing Exchange Offers</h1>
+            <h2 class="text-[20px] font-medium my-2">Enjoy Exchange Bonus & Get a Chance to Win Reno12 5G</h2>
+            <h3 class="text-[#0000008C] text-lg">7th - 20th Feb.</h3>
+            <button class="button bg-black text-white mt-4 px-9 py-2.5 rounded-full text-lg">Explore</button>
+        </div>
+        <div class="flex justify-center items-center gap-6 mt-14">
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer hover:border-1"></div>
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer hover:border-1"></div>
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer bg-black"></div>
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer hover:border-1"></div>
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer hover:border-1"></div>
+            <div class="bg-[#C9A8B7] w-3 h-3 rounded-full cursor-pointer hover:border-1"></div>
+        </div>
+    </div>
+    <!--bg-->
+
+    <!--phone-->
+    <div id="phone" class="text-center font-medium text-xl flex gap-18 px-27 mt-25 max-sm:w-188 max-sm:px-5 max-sm:gap-5 max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <div class="first hover:rounded-xl">
+            <img src="./img/1.webp" alt="" class="w-48 max-sm:w-33">
+            <h1 class="pb-3">Phone</h1>
+        </div>
+        <div class="first hover:rounded-xl">
+            <img src="./img/2.webp" alt="" class="w-48 max-sm:w-33">
+            <h1 class="pb-3">Audio</h1>
+        </div>
+        <div class="first hover:rounded-xl">
+            <img src="./img/3.webp" alt="" class="w-48 max-sm:w-33">
+            <h1 class="pb-3">Tablets</h1>
+        </div>
+        <div class="first hover:rounded-xl">
+            <img src="./img/4.webp" alt="" class="w-48 max-sm:w-33">
+            <h1 class="pb-3">Accessory</h1>
+        </div>
+        <div class="first hover:rounded-xl">
+            <img src="./img/5.webp" alt="" class="w-48 max-sm:w-33">
+            <h1 class="pb-3">Exchange</h1>
+        </div>
+    </div>
+    <!--phone-->
+
+    <!--Offers-->
+    <div id="Offers" class="flex py-22 px-27 max-sm:w-188 max-sm:px-10 max-sm:justify-center max-sm:flex-wrap max-md:w-345 max-md:px-10 max-lg:w-351 max-lg:px-14 max-xl:px-15">
+        <img src="./img/7.webp" alt="" class="first w-[432px] hover:rounded-xl">
+        <img src="./img/8.webp" alt="" class="first w-[432px] hover:rounded-xl max-sm:mt-10">
+        <img src="./img/9.webp" alt="" class="first w-[432px] hover:rounded-xl max-sm:mt-10">
+    </div>
+    <!--Offers-->
+
+    <!--above-->
+    <div id="highmobile" class="px-27 max-sm:w-188 max-sm:px-5 max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <h1 class="text-2xl font-medium max-sm:text-center max-sm:font-bold max-md:font-bold max-lg:font-bold max-xl:font-bold">Hot-selling Smartphone above ₹20,000</h1>
+         <div class="mt-12 flex flex-wrap gap-3 max-sm:justify-center max-md:gap-28 max-md:justify-center max-lg:gap-31 max-lg:justify-center max-xl:gap-31 max-xl:justify-center max-2xl:gap-25 max-2xl:justify-center">
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>9% OFF</h2>
+                </div>
+                <img src="./img/10.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Reno13 Pro 5G</h1>
+                <h2 class="text-[#737373] text-lg">Exchange Bonus up to ₹3,000</h2>
+                <h3 class="text-[22px] font-medium my-3">₹49,999 <s class="text-[#999999] font-light text-base">₹54,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>9% OFF</h2>
+                </div>
+                <img src="./img/11.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Reno13 5G</h1>
+                <h2 class="text-[#737373] text-lg">Exchange Bonus up to ₹3,000</h2>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹37,999 <s class="text-[#999999] font-light text-base">₹41,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#999999" d="M11 14v8H7a3 3 0 0 1-3-3v-4a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v4a3 3 0 0 1-3 3h-4v-8zM16.5 2a3.5 3.5 0 0 1 3.163 5H20a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-7V7h-2v5H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h.337A3.5 3.5 0 0 1 4 5.5C4 3.567 5.567 2 7.483 2c1.755-.03 3.312 1.092 4.381 2.934l.136.243c1.033-1.914 2.56-3.114 4.291-3.175zm-9 2a1.5 1.5 0 0 0 0 3h3.143C9.902 5.095 8.694 3.98 7.5 4m8.983 0c-1.18-.02-2.385 1.096-3.126 3H16.5a1.5 1.5 0 1 0-.017-3"/></svg>
+                    <h2>Gift</h2>
+                </div>
+                <img src="./img/12.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Find X8 Pro</h1>
+                <h2 class="text-[#737373] text-lg">NCEMI up to 24 months & Exchange<br>Bonus up to ₹8,000</h2>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹99,999 <s class="text-[#999999] font-light text-base">₹109,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 24 24"><path fill="#999999" d="M11 14v8H7a3 3 0 0 1-3-3v-4a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v4a3 3 0 0 1-3 3h-4v-8zM16.5 2a3.5 3.5 0 0 1 3.163 5H20a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-7V7h-2v5H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h.337A3.5 3.5 0 0 1 4 5.5C4 3.567 5.567 2 7.483 2c1.755-.03 3.312 1.092 4.381 2.934l.136.243c1.033-1.914 2.56-3.114 4.291-3.175zm-9 2a1.5 1.5 0 0 0 0 3h3.143C9.902 5.095 8.694 3.98 7.5 4m8.983 0c-1.18-.02-2.385 1.096-3.126 3H16.5a1.5 1.5 0 1 0-.017-3"/></svg>
+                    <h2>Gift</h2>
+                </div>
+                <img src="./img/13.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Find X8</h1>
+                <h2 class="text-[#737373] text-lg">NCEMI up to 24 months & Exchange<br>Bonus up to ₹8,000</h2>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹69,999 <s class="text-[#999999] font-light text-base">₹79,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>25% OFF</h2>
+                </div>
+                <img src="./img/14.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Reno12 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 12% off</h2>
+                <h3 class="text-[22px] font-medium my-3">₹32,999 <s class="text-[#999999] font-light text-base">₹43,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>21% OFF</h2>
+                </div>
+                <img src="./img/15.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO F27 Pro+ 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 10% off</h2>
+                <h3 class="text-[22px] font-medium my-3">₹25,999 <s class="text-[#999999] font-light text-base">₹32,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>22% OFF</h2>
+                </div>
+                <img src="./img/16.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO F27 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 14% off</h2>
+                <h3 class="text-[22px] font-medium my-3">₹20,999 <s class="text-[#999999] font-light text-base">₹26,999</s></h3>
+            </div>
+         </div>
+    </div>
+    <!--above-->
+
+    <!--below-->
+    <div id="lowmobile" class="px-27 py-25 max-sm:w-188 max-sm:px-5 max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <h1 class="text-2xl font-medium max-sm:text-center max-sm:font-bold max-md:font-bold max-lg:font-bold max-xl:font-bold">Hot-selling Smartphone below ₹20,000</h1>
+        <div class="mt-12 flex flex-wrap gap-5 max-sm:justify-center max-md:gap-30 max-md:justify-center max-lg:gap-33 max-lg:justify-center max-xl:gap-33 max-xl:justify-center max-2xl:gap-25 max-2xl:justify-center">
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>14% OFF</h2>
+                </div>
+                <img src="./img/17.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO A3 Pro 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 10% off</h2>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹49,999 <s class="text-[#999999] font-light text-base">₹54,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>25% OFF</h2>
+                </div>
+                <img src="./img/18.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO A3 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 10% off</h2>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹14,999 <s class="text-[#999999] font-light text-base">₹19,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>23% OFF</h2>
+                </div>
+                <img src="./img/19.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO K12x 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 10% off</h2>
+                <h3 class="text-[22px] font-medium my-3">₹12,999 <s class="text-[#999999] font-light text-base">₹16,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>23% OFF</h2>
+                </div>
+                <img src="./img/20.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO A3x 5G</h1>
+                <h2 class="text-[#737373] text-lg">Bank offer up to 10% off</h2>
+                <h3 class="text-[22px] font-medium my-3">₹11,499 <s class="text-[#999999] font-light text-base">₹14,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>30% OFF</h2>
+                </div>
+                <img src="./img/21.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO A3x 4G</h1>
+                <h3 class="text-[22px] font-medium my-3">₹8,999 <s class="text-[#999999] font-light text-base">₹12,999</s></h3>
+            </div>
+         </div>
+    </div>
+    <!--below-->
+
+    <!--audio-->
+    <div id="audio" class="px-27 max-sm:w-188 max-sm:px-5 max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <h1 class="text-2xl font-medium max-sm:font-bold max-sm:text-center max-md:font-bold max-lg:font-bold max-xl:font-bold">OPPO Audio</h1>
+        <div class="mt-12 flex flex-wrap gap-5 max-sm:justify-center max-md:gap-30 max-md:justify-center max-lg:gap-32 max-lg:justify-center max-xl:gap-32 max-xl:justify-center max-2xl:justify-center max-2xl:gap-25">
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>37% OFF</h2>
+                </div>
+                <img src="./img/22.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Enco Air3 Pro</h1>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹4,999 <s class="text-[#999999] font-light text-base">₹7,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>30% OFF</h2>
+                </div>
+                <img src="./img/23.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Enco Air2 Pro</h1>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹3,499 <s class="text-[#999999] font-light text-base">₹4,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>55% OFF</h2>
+                </div>
+                <img src="./img/24.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Enco Air2i</h1>
+                <h3 class="text-[22px] font-medium my-3">₹1,799 <s class="text-[#999999] font-light text-base">₹3,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>60% OFF</h2>
+                </div>
+                <img src="./img/25.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Enco Buds2</h1>
+                <h3 class="text-[22px] font-medium my-3">₹1,599 <s class="text-[#999999] font-light text-base">₹3,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>20% OFF</h2>
+                </div>
+                <img src="./img/26.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO MH166 Earphone</h1>
+                <h3 class="text-[22px] font-medium my-3">₹399 <s class="text-[#999999] font-light text-base">₹499</s></h3>
+            </div>
+         </div>
+    </div>
+    <!--audio-->
+
+     <!--accessories-->
+     <div id="accessories" class="px-27 py-25 max-sm:w-188 max-sm:px-5 max-md:w-345 max-lg:w-351 max-xl:w-351 max-2xl:w-374">
+        <h1 class="text-2xl font-medium max-sm:font-bold max-sm:text-center max-md:font-bold max-lg:font-bold max-xl:font-bold">OPPO Accessories</h1>
+        <div class="mt-12 flex flex-wrap gap-4 max-sm:justify-center max-md:gap-30 max-md:justify-center max-lg:gap-32 max-lg:justify-center max-xl:gap-32 max-xl:justify-center max-2xl:justify-center max-2xl:gap-25">
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>50% OFF</h2>
+                </div>
+                <img src="./img/27.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO SUPERVOOC 80W <br> Power Adapter</h1>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹1,999 <s class="text-[#999999] font-light text-base">₹3,999</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>75% OFF</h2>
+                </div>
+                <img src="./img/28.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO SUPERVOOC 45W <br> Power Adapter</h1>
+                <h3 class="text-[22px] font-medium my-3 mb-10">₹899 <s class="text-[#999999] font-light text-base">₹3,599</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <div class="absolute flex items-center text-[#999999] text-xs gap-1 left-4 top-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 17 24"><path fill="#999999" d="M0 13.714h7.875L5.137 24l12.006-13.714H9.268L12 0z"/></svg>
+                    <h2>41% OFF</h2>
+                </div>
+                <img src="./img/29.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO VOOC Type-C Data <br> Cable 1M</h1>
+                <h3 class="text-[22px] font-medium my-3">₹499 <s class="text-[#999999] font-light text-base">₹849</s></h3>
+            </div>
+            <div class="first rounded-xl pl-7 relative hover:mt-10">
+                <img src="./img/30.webp" alt="" class="mt-5 w-70">
+                <h1 class="text-[22px] font-medium">OPPO Type-C Data Cable 1M</h1>
+                <h3 class="text-[22px] font-medium my-3">₹399</h3>
+            </div>
+         </div>
+    </div>
+    <!--accessories-->
+    
+    <!--footer-->
+    <footer class="bg-black text-white py-10 px-28 max-sm:w-188 max-sm:px-5 max-md:w-345 max-lg:w-351 max-lg:px-15 max-xl:w-351 max-xl:px-15 max-2xl:w-374">
+        <div class="flex flex-wrap gap-17 font-medium mt-5 max-sm:justify-center max-sm:gap-55">
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">Smartphones</a></li>
+                <li class="mt-5 hover:underline"><a href="#">OPPO Find X8 Pro</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Find X8</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Reno13 Pro 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Reno13 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Reno12 Pro 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Reno12 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO F27 Pro+ 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO F27 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO K12x 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO A3 Pro 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO A3 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO A3x 5G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO A3x 4G</a></li>
+                <li class="leading-loose hover:underline"><a href="#">See All Smartphomes</a></li>
+            </ul>
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">IoT Products</a></li>
+                <li class="mt-5 hover:underline"><a href="#">OPPO Enco Air3 Pro</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Enco Air2 Pro</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Enco Buds2</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO MH166 Earphone</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO 80W SUPERVOOC<br>Car Charger</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO SUPERVOOC 45W<br>Power Adapter</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO SUPERVOOC 33W<br>Power Adapter</a></li>
+            </ul>
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">Special Offers</a></li>
+                <li class="mt-5 hover:underline"><a href="#">Exchange Program</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Education Program</a></li>
+            </ul>
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">Support</a></li>
+                <li class="mt-5 hover:underline"><a href="#">Contact Us</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Service Center</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Warranty Center</a></li>
+                <li class="leading-loose hover:underline"><a href="#">OPPO Update</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Terms and Condition</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Investors Information</a></li>
+                <li class="leading-loose hover:underline"><a href="#">E-waste Management</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Security Response Center</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Warranty Policy</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Protection Plan</a></li>
+            </ul>
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">About OPPO</a></li>
+                <li class="mt-5 hover:underline"><a href="#">Our Story</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Technology</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Newsroom</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Campaign</a></li>
+                <li class="leading-loose hover:underline"><a href="#">Career</a></li>
+            </ul>
+            <ul class="text-[#737373]">
+                <li><a href="#" class="text-white">OPPO Community</a></li>
+                <li class="mt-5 hover:underline"><a href="#">OPPO Community</a></li>
+            </ul>
+        </div>
+        <div class="h-[1px] bg-[#737373] my-10"></div>
+        <div class="flex flex-wrap justify-between px-5">
+            <div class="flex gap-3">
+                <img src="./img/robo.png" alt="">
+                <select name="" id="">
+                    <option value="" class="text-lg">Have any questions? Contact us</option>
+                </select>
+            </div>
+            <div class="flex gap-3">
+                <div class="icon w-8 h-8 bg-[#737373] rounded-full flex justify-center items-center hover:bg-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"/></svg>
+                </div>
+                <div class="icon w-8 h-8 bg-[#737373] rounded-full flex justify-center items-center hover:bg-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#000" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"/></svg>
+                </div>
+                <div class="icon w-8 h-8 bg-[#737373] rounded-full flex justify-center items-center hover:bg-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M22 11.939a26.5 26.5 0 0 0-.41-4.801a2.5 2.5 0 0 0-1.803-1.714a61 61 0 0 0-7.81-.41c-2.609-.03-5.217.11-7.808.42a2.52 2.52 0 0 0-1.76 1.76a26.4 26.4 0 0 0-.408 4.8c-.01 1.61.127 3.216.409 4.8a2.56 2.56 0 0 0 1.78 1.782c2.592.303 5.2.44 7.81.409a59 59 0 0 0 7.787-.41a2.52 2.52 0 0 0 1.759-1.758c.307-1.608.46-3.242.454-4.878m-7.411.582l-4.005 2.271a.53.53 0 0 1-.785-.464V9.616a.52.52 0 0 1 .785-.454l4.137 2.378a.52.52 0 0 1-.022.908z"/></svg>
+                </div>
+                <div class="icon w-8 h-8 bg-[#737373] rounded-full flex justify-center items-center hover:bg-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#000" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h14c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2M9.984 15.523a5.54 5.54 0 0 0 5.538-5.539c0-.338-.043-.664-.103-.984H17v7.216a.69.69 0 0 1-.693.69H3.693a.69.69 0 0 1-.693-.69V9h1.549c-.061.32-.104.646-.104.984a5.54 5.54 0 0 0 5.539 5.539M6.523 9.984a3.461 3.461 0 1 1 6.922 0a3.461 3.461 0 0 1-6.922 0M16.307 6h-1.615A.694.694 0 0 1 14 5.308V3.691c0-.382.31-.691.691-.691h1.615c.384 0 .694.309.694.691v1.616c0 .381-.31.693-.693.693"/></svg>
+                </div>
+            </div>
+        </div> 
+        <div class="h-[1px] bg-[#737373] my-10"></div>
+        <div class="flex flex-wrap justify-between text-[#737373]">
+                <ul class="text-xs flex items-center gap-5 max-sm:gap-8 max-sm:px-5">
+                    <li class="hover:underline"><a href="#">Privacy Policy</a></li>
+                    <li class="hover:underline"><a href="#">Usee Agreement</a></li>
+                    <li class="hover:underline"><a href="#">Terms of Sales</a></li>
+                    <li>Copyright2024OPPO.All rights reserved.</li>
+                    <img src="./img/trute.png" alt="" class="w-20 cursor-pointer">
+                </ul>
+                <select name="" id="" class="max-sm:hidden">
+                    <option value="">Back to top</option>
+                </select>
+        </div>              
+    </footer>
+    <!--footer-->
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.add('open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('open');
+        });
+    </script>
+</body>
+</html>
