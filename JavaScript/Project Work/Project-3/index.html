@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container border w-[25%]  mx-auto mt-14">
+        <!-- Image -->
+        <div class="flex justify-center items-center mt-5">
+            <img src="./images/logo-light.png" alt="" class="h-[30%] w-[50%]">
+        </div>
+
+
+
+        <!-- Input Fields -->
+        <div class="flex justify-center items-center flex-col mt-10">
+            <!-- Username -->
+            <input type="text" id="username" placeholder="Phone number, username, or email"
+                class="w-2/3 h-10 border border-gray-300 outline-none text-sm p-2 mb-2">
+
+            <!-- Password with Eye Icon -->
+            <div class="w-2/3 relative">
+                <input type="password" id="Password" placeholder="Password"
+                    class="w-full h-10 border border-gray-300 outline-none text-sm p-2 pr-10">
+                <span class="absolute right-3 top-2.5 cursor-pointer" onclick="togglePassword()">
+                    <i id="eyeIcon" class="fa-regular fa-eye"></i>
+                </span>
+            </div>
+        </div>
+
+        <!-- Login Button -->
+        <div class="flex justify-center items-center mt-4 mb-5">
+            <button class="bg-[#4cb5f9] w-2/3 h-8 rounded-lg text-white" onclick="validateForm()">Log in</button>
+        </div>
+
+        <!-- OR line -->
+        <div class="flex justify-center items-center">
+            <div class="border w-1/4 mr-4 border-gray-300"></div>
+            <p>OR</p>
+            <div class="border w-1/4 ml-4 border-gray-300"></div>
+        </div>
+
+        <!-- Facebook -->
+        <div class="flex justify-center items-center mt-5">
+            <i class="fa-brands fa-facebook text-xl text-[#0095f6]"></i>
+            <span
+                class="text-[#0095f6] ml-3 font-medium hover:text-black transition-all duration-300 cursor-pointer">Log
+                in with Facebook</span>
+        </div>
+
+        <!-- Forgot Password -->
+        <div class="flex justify-center items-center mt-5 mb-8">
+            <span class="text-sm text-blue-500 cursor-pointer">Forgot password?</span>
+        </div>
+
+    </div>
+
+    <div class="flex justify-center items-center mt-8">
+        <div class="border w-1/4 text-center py-5">
+            <span>Don't have an account?</span>
+            <span class="text-[#2995f6] font-medium">Sign up</span>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center">
+        <div class="mt-5 text-center">
+            <p>Get the app.</p>
+            <div class="flex flex-row mt-4 gap-3">
+                <img src="./images/gg-play.png" alt="" class="h-12">
+                <img src="./images/microshof imagesh.jpg" alt="" class="h-12">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- calculator -->
+
+    <section>
+        <div class="ml-[38%] mr-[40%] mt-10">
+            <div class=" border p-40 bg-black " id="bg"></div><br>
+            <button class=" border2  bg-gray-400  ml-[37%]" id="btn2" onclick="change()">Change</button>
+        </div>
+    </section>
+
+
+     <!--result-->
+     <section class="text-white mt-10">
+        <div class=" ml-[38%] mr-[40%]">
+        <table class="inline">
+            <thead>
+                <tr class="border border2 text-black text-center">
+                    <th class=" border2">Subject</th>
+                    <th class=" border2">Marks Out Of 100</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border2 text-black text-center">
+                    <td>Hindi</td>
+                    <td><input type="number" id="inp2" class="border2 me-2 ms-2"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td>English</td>
+                    <td><input type="number" id="inp3" class="border2 me-2 ms-2"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td>SS</td>
+                    <td><input type="number" id="inp4" class="border2 me-2 ms-2"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td>Science</td>
+                    <td><input type="number" id="inp5" class="border2 me-2 ms-2"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td>Maths</td>
+                    <td><input type="number" id="inp6" class="border2 me-2 ms-2"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td class=" ">Total</td>
+                    <td><p class="border2 total ms-2 me-2 " id="tt"></td>
+                </tr>
+                <tr  class="border2 text-black text-center">
+                    <td class="">Percentage</td>
+                    <td><p class="border2 percentage ms-2 me-2" id="pr"></p></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="ml-[25%] mr-[10%] mt-[7%]">
+        <button class="border2 text-black mt-0" id="totalbtn" onclick="totalall()">Result</button>
+        <button class="border2 pl-10 text-black" id="clearbtn" onclick="clearall()">Clear</button>
+    </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
