@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #edf2f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .timer-container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .inputs {
+      margin-bottom: 20px;
+    }
+
+    .inputs input {
+      padding: 10px;
+      font-size: 18px;
+      width: 70px;
+      margin: 5px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      transition: border-color 0.2s ease-in-out;
+    }
+
+    .inputs input:focus {
+      border-color: #5a67d8;
+      outline: none;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      width: 200px;
+    }
+
+    .start-btn {
+      background-color: #5a67d8;
+      color: white;
+    }
+
+    .start-btn:hover {
+      background-color: #434190;
+    }
+
+    .stop-btn {
+      background-color: #e53e3e;
+      color: white;
+    }
+
+    .stop-btn:hover {
+      background-color: #c53030;
+    }
+
+    #countdown {
+      font-size: 40px;
+      font-weight: bold;
+      color: #2d3748;
+      margin-top: 20px;
+    }
+
+    #message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer-container">
+    <h2>Countdown Timer</h2>
+
+    <div class="inputs">
+      <input type="number" id="hours" placeholder="HH" min="0">
+      <input type="number" id="minutes" placeholder="MM" min="0">
+      <input type="number" id="seconds" placeholder="SS" min="0">
+    </div>
+
+    <div class="buttons">
+      <button class="start-btn" onclick="startTimer()">Start</button>
+      <button class="stop-btn" onclick="stopTimer()">Stop</button>
+      <button class="start-btn" onclick="pushTime()">Push Time</button>
+      <button class="start-btn" onclick="popTime()">Pop Time</button>
+    </div>
+
+    <div id="countdown">00:00:00</div>
+    <div id="message"></div>
+  </div>
+
+  <script src="./timer-clook.js"></script>
+</body>
+</html>
