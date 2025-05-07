@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Store</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-container border-white">
+                <div class="logo">
+                    <img src="imagesh/amazon_logo.png" alt="Amazon Logo" />
+                </div>
+                <span class="dotin">.in</span>
+            </div>
+
+            <div class="address-container border-white">
+                <p class="hello">Hello</p>
+                <div class="icon-address">
+                    <span class="material-icons">location_on</span>
+                    <p>Select your address</p>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon.in" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="language-container border-white">
+                <p>English</p>
+                <div class="lauguge-image">
+                    <img src="https://media.istockphoto.com/vectors/vector-flag-of-the-republic-of-india-proportion-23-the-national-flag-vector-id1051236720?k=20&m=1051236720&s=612x612&w=0&h=ATObRTHmTosADa9zaB2dQPn_VAQmG1XYH2x92kzc304=" alt="India Flag" />
+                </div>
+            </div>
+
+            <div class="login-container border-white">
+                <p>Hello, <span>sign in</span></p>
+                <p class="account">Account & Lists</p>
+            </div>
+
+            <div class="return-order-container">
+                <p>Returns</p>
+                <div class="order">& Orders</div>
+            </div>
+
+            <button class="cart-icon border-white" id="cart-toggle">
+                <i class="fa fa-shopping-cart"></i> Cart
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container container-nav" >
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button> 
+            <ul class="nav-links" id="nav-links">
+                <li class="border-white">
+                    <span class="open-nav-slider"   >
+                        <a href="#" id="all">All</a>
+                    </span>
+                </li>
+                <li class="border-white"><a href="#" id="best-sellers">Best Sellers</a></li>
+                <li class="border-white"><a href="#" id="mobiles">Mobiles</a></li>
+                <li class="border-white"><a href="#" id="electronics">Electronics</a></li>
+                <li class="border-white fashion-dropdown">
+                    <a href="#">Fashion</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="mens">Mens</a></li>
+                        <li><a href="#" id="womens">Womens</a></li>
+                    </ul>
+                </li>
+                <li class="border-white prime-image-hover">
+                    <a href="#">Prime</a>
+                    <div class="prime-image">
+                        <img src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg" alt="Prime Preview" />
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-right-image-amazon-prime">
+                <img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Desktop/Watch-Entertainment-for-FREE_400-x39._CB605460886_.jpg" alt="Watch Free" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image Slider -->
+    <div class="header-slider">
+        <a href="#" class="control-prev">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+        </a>
+        <a href="#" class="control-next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </a>
+        <ul>
+            <li><img src="imagesh/header1.jpg" class="header-img"/></li>
+            <li><img src="imagesh/header2.jpg" class="header-img"/></li>
+            <li><img src="imagesh/header3.jpg" class="header-img"/></li>
+            <li><img src="imagesh/header4.jpg" class="header-img"/></li>
+            <li><img src="imagesh/header5.jpg" class="header-img"/></li>
+            <li><img src="imagesh/header6.jpg" class="header-img"/></li>
+        </ul>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="box-row" id="product-section">
+        <div class="product-grid" id="product-container"></div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-container" style="display: none;">
+        <div id="cart-items"></div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="card.js"></script>
+</body>
+</html>
