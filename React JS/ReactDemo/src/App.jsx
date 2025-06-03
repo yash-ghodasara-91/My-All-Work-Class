@@ -24,12 +24,14 @@
 
 
 import React from 'react'
-import UseState from './Component/UseState'
+// import UseState from './Component/UseState'
+import UseEffect from './Component/UseEffect'
 
 const App = () => {
   return (
     <div>
-      <UseState/>
+      {/* <UseState/> */}
+      <UseEffect/>
     </div>
   )
 }
