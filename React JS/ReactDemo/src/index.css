@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 
 :root {
@@ -70,4 +70,17 @@ button:focus-visible {
   }
 }
 
+ */
 
+
+.main {
+ width: 50%;
+ height: 50%;
+ align-items: center;
+ margin-left: 30%;
+ margin-top: 10%;
+ border: 2px solid black;
+ border-radius: 10px;
+ padding: 10px;
+ gap: 10px;
+}

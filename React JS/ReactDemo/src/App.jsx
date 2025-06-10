@@ -26,12 +26,16 @@
 import React from 'react'
 // import UseState from './Component/UseState'
 import UseEffect from './Component/UseEffect'
+import Events from './Component/Events'
+import UseRef from './Component/UseRef'
 
 const App = () => {
   return (
     <div>
       {/* <UseState/> */}
       <UseEffect/>
+      <Events/>
+      <UseRef/>
     </div>
   )
 }
