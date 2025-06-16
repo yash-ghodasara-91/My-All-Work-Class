@@ -25,17 +25,23 @@
 
 import React from 'react'
 // import UseState from './Component/UseState'
-import UseEffect from './Component/UseEffect'
-import Events from './Component/Events'
-import UseRef from './Component/UseRef'
+// import UseEffect from './Component/UseEffect'
+// import Events from './Component/Events'
+// import UseRef from './Component/UseRef'
+// import Form from './Component/Form'
+// import FormValidation from './Component/FormValidation'
+import Amazon from '../../Project Card/src/Components/Amazon'
 
 const App = () => {
   return (
     <div>
       {/* <UseState/> */}
-      <UseEffect/>
+      {/* <UseEffect/>
       <Events/>
-      <UseRef/>
+      <UseRef/> */}
+      {/* <FormValidation/>
+      <Form/> */}
+      <Amazon />
     </div>
   )
 }
