@@ -30,7 +30,7 @@ import React from 'react'
 // import UseRef from './Component/UseRef'
 // import Form from './Component/Form'
 // import FormValidation from './Component/FormValidation'
-import Amazon from '../../Project Card/src/Components/Amazon'
+import LocalStore from './Component/LocalStore'
 
 const App = () => {
   return (
@@ -41,7 +41,8 @@ const App = () => {
       <UseRef/> */}
       {/* <FormValidation/>
       <Form/> */}
-      <Amazon />
+      {/* <Amazon /> */}
+      <LocalStore/>
     </div>
   )
 }
