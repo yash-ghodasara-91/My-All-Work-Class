@@ -31,6 +31,9 @@ import React from 'react'
 // import Form from './Component/Form'
 // import FormValidation from './Component/FormValidation'
 import LocalStore from './Component/LocalStore'
+import Crud from './Component/Crud'
+import Extra from './Component/Extra'
+import PrektishTWO from './Component/PrektishTWO'
 
 const App = () => {
   return (
@@ -42,7 +45,12 @@ const App = () => {
       {/* <FormValidation/>
       <Form/> */}
       {/* <Amazon /> */}
-      <LocalStore/>
+      {/* <LocalStore/> */}
+      <Crud />
+      <br />
+      <br />
+      {/* <Extra /> */}
+      <PrektishTWO />
     </div>
   )
 }

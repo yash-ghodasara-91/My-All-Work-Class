@@ -18,7 +18,7 @@ const LocalStore = () => {
             [e.target.name]: e.target.value,
         })
     })
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => {   
         e.preventDefault();
         if (editIndex == null) {
             let obj = { id: Date.now(), ...formdata }

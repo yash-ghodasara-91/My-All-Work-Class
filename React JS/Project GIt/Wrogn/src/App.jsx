@@ -1,19 +1,21 @@
 import React from 'react'
-import Navbar from './Component/Navbar'
-import Sliderone from './Component/Sliderone'
-import Card from './Component/Card'
-import ViratFashionPage from './Component/ViratFashionPage'
-import TrendingCategories from './Component/TrendingCategories'
-import BestSellers from './Component/BestSellers'
-import WeAreWrogn from './Component/WeAreWrogn'
-import WrognWallpapers from './Component/Wallpapers'
-import ServiceHighlights from './Component/ServiceHighlights'
-import Footer from './Component/Footer'
-import LoginSignup from './Component/LoginSignup'
+import Navbar from './component/Navbar'
+import Sliderone from './component/Sliderone'
+import Card from './component/Card'
+import ViratFashionPage from './component/ViratFashionPage'
+import BestSellers from './component/BestSellers'
+import WeAreWrogn from './component/WeAreWrogn'
+import WrognWallpapers from './component/Wallpapers'
+import ServiceHighlights from './component/ServiceHighlights'
+import Footer from './component/Footer'
+import LoginSignup from './component/LoginSignup'
+import TrendingCategories from './component/TrendingCategories'
+
+
 
 export default function App() {
   return (
-    <div>
+    <div> 
       <Navbar/>
       <Sliderone/>
       <Card/>
