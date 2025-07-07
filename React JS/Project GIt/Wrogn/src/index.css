@@ -54,6 +54,10 @@
       opacity: 0.20 !important;
 }
 
+
+
+/* From mosion css  */
+
 @keyframes scroll-down {
   0% {
     transform: translateY(-100%);
@@ -230,3 +234,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+/* LoginForm */
+
+.input-style {
+  @apply w-full px-4 py-2 bg-transparent border border-[#444] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF004F];
+}
+
+/* Swaypar Dot button css  */
+ .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 100px !important;
+    top:-35px !important;
+    left: 30px !important;
+     width: 97% !important;
+     gap: 2px !important;
+}
+

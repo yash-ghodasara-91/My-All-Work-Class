@@ -38,7 +38,7 @@ const LocalStore = () => {
     }
 
     const handleDelet = ((id) => {
-        let newDeta = record.filter(item => item.id != id)
+        let newDeta = record.filter((item) => item.id != id)
         setRecord(newDeta)
         localStorage.setItem("Student", JSON.stringify(newDeta))
     })
@@ -46,8 +46,8 @@ const LocalStore = () => {
     const handleEdit = (id) => {
         let singleDeta = record.find((item)=> item.id == id)
         setFormdata({
-            name: singleDeta.name,
-            subject: singleDeta.subject
+           name: singleDeta.name,
+           subject: singleDeta.subject
         })
 
         setEditIndex(id)
