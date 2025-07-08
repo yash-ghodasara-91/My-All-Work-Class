@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate()
 
   return (
-    <nav className="bg-white shadow-md font-display sticky   z-50">
+    <nav className="bg-white  font-display sticky   z-50">
       <div className="max-w-full px-4 md:px-10 lg:px-10 xl:px-20 py-4 flex items-center justify-around">
         {/* Logo */}
         <div className=''>
@@ -24,81 +25,110 @@ export default function Navbar() {
         </div>
 
         {/* Menu */}
-        <ul className="hidden lg:flex items-center gap-6 uppercase text-[13px] font-bold  relative z-40">
-          <li><a href="#">eoss</a></li>
-          <li><a href="#">exclusive</a></li>
+        <ul className="hidden lg:flex items-center gap-6 uppercase text-[13px] font-bold relative z-40">
+          <li><a onClick={() => navigate("/eoss")} className="cursor-pointer">eoss</a></li>
+          <li><a onClick={() => navigate("/exclusive")} className="cursor-pointer">exclusive</a></li>
 
-          {/* All Products Dropdown */}
+          {/* All Products */}
           <li className="relative group">
-            <a href="#" className="hover:text-black">all products</a>
+            <a onClick={() => navigate("/all-products")} className="hover:text-black cursor-pointer">all products</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-13 shadow-lg rounded-2xl w-[450px] hidden group-hover:block z-50">
               <div className="grid grid-cols-2 gap-x-10 gap-y-7 text-sm uppercase font-medium">
-                {["View All", "Sweatshirts", "Spring Summer 25", "Jackets", "Bestsellers", "Sweaters", "Fresh Arrivals", "Shorts", "Shirts", "Polos", "Tshirts", "Essentials", "Jeans", "Footwear", "Cargos & Joggers"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+                <a href="#">View All</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">Spring Summer 25</a>
+                <a href="#">Jackets</a>
+                <a href="#">Bestsellers</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Fresh Arrivals</a>
+                <a href="#">Shorts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Polos</a>
+                <a href="#">Tshirts</a>
+                <a href="#">Essentials</a>
+                <a href="#">Jeans</a>
+                <a href="#">Footwear</a>
+                <a href="#">Cargos & Joggers</a>
               </div>
             </div>
           </li>
 
-          {/* Topwear Dropdown */}
+          {/* Topwear */}
           <li className="relative group">
-            <a href="#" className="hover:text-black uppercase">Topwear</a>
+            <a onClick={() => navigate("/topwear")} className="hover:text-black cursor-pointer">topwear</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-10 shadow-lg rounded-2xl w-[300px] hidden group-hover:block z-50">
-              <div className="grid grid-cols-2 gap-x-10 mt-5 gap-y-6 text-sm uppercase font-medium">
-                {["View All", "Polos", "Bestsellers", "Jackets", "Fresh Arrivals", "Sweatshirts", "Shirts", "Sweaters", "Tshirts"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+              <div className="grid grid-cols-2 gap-x-10 gap-y-6 text-sm uppercase font-medium">
+                <a href="#">View All</a>
+                <a href="#">Polos</a>
+                <a href="#">Bestsellers</a>
+                <a href="#">Jackets</a>
+                <a href="#">Fresh Arrivals</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Tshirts</a>
               </div>
             </div>
           </li>
 
-          {/* Remaining Menu Items */}
+          {/* Bottomwear */}
           <li className="relative group">
-            <a href="#" className="hover:text-black uppercase">Bottomwear</a>
+            <a onClick={() => navigate("/bottomwear")} className="hover:text-black cursor-pointer">bottomwear</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-10 shadow-lg rounded-2xl w-[400px] hidden group-hover:block z-50">
               <div className="grid grid-cols-2 gap-x-10 gap-y-5 mt-5 text-sm uppercase font-medium">
-                {["View All", "Jeans", "Bestsellers", "Cargos & Joggers", "Fresh Arrivals", "Shorts"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+                <a href="#">View All</a>
+                <a href="#">Jeans</a>
+                <a href="#">Bestsellers</a>
+                <a href="#">Cargos & Joggers</a>
+                <a href="#">Fresh Arrivals</a>
+                <a href="#">Shorts</a>
               </div>
             </div>
           </li>
 
+          {/* Footwear */}
           <li className="relative group">
-            <a href="#" className="hover:text-black uppercase">Footwear</a>
+            <a onClick={() => navigate("/footwear")} className="hover:text-black cursor-pointer">footwear</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-10 shadow-lg rounded-2xl w-[300px] hidden group-hover:block z-50">
               <div className="grid grid-cols-2 gap-x-10 gap-y-5 mt-5 text-sm uppercase font-medium">
-                {["View All", "Sliders", "Sneakers", "Athleisure"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+                <a href="#">View All</a>
+                <a href="#">Sliders</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Athleisure</a>
               </div>
             </div>
           </li>
 
+          {/* Fresh Arrivals */}
           <li className="relative group">
-            <a href="#" className="hover:text-black uppercase">Fresh Arrivals</a>
+            <a onClick={() => navigate("/fresh-arrivals")} className="hover:text-black cursor-pointer">fresh arrivals</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-10 shadow-lg rounded-2xl w-[300px] hidden group-hover:block z-50">
               <div className="grid grid-cols-2 gap-x-10 gap-y-5 mt-5 text-sm uppercase font-medium">
-                {["T-Shirts", "Cargos", "Shirts", "Polos", "Jeans"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+                <a href="#">T-Shirts</a>
+                <a href="#">Cargos</a>
+                <a href="#">Shirts</a>
+                <a href="#">Polos</a>
+                <a href="#">Jeans</a>
               </div>
             </div>
           </li>
 
-
+          {/* Essentials */}
           <li className="relative group">
-            <a href="#" className="hover:text-black uppercase">Essentials</a>
+            <a onClick={() => navigate("/essentials")} className="hover:text-black cursor-pointer">essentials</a>
             <div className="absolute top-full left-0 mt-0 bg-white text-black p-7 shadow-lg rounded-2xl w-[240px] hidden group-hover:block z-50">
               <div className="grid grid-cols-2 gap-x-10 gap-y-5 mt-5 text-sm uppercase font-medium">
-                {["View All", "Perfume", "Caps", "Socks", "Trunks", "Briefs"].map(item => (
-                  <a key={item} href="#" className="hover:underline hover:text-[#EF3C74]">{item}</a>
-                ))}
+                <a href="#">View All</a>
+                <a href="#">Perfume</a>
+                <a href="#">Caps</a>
+                <a href="#">Socks</a>
+                <a href="#">Trunks</a>
+                <a href="#">Briefs</a>
               </div>
             </div>
           </li>
-
         </ul>
+
 
         {/* Search + Icons */}
         <div className="flex items-center gap-3 ms-30 z-0 relative">
@@ -115,7 +145,7 @@ export default function Navbar() {
           </div>
 
           {/* Profile */}
-              <div className="relative group">
+          <div className="relative group">
             <div className="p-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1" />

@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const SignIn = () => {
+const SignIn = ({ setIsAuth }) => {
   const [formdata, setformData] = useState({ email: "", password: "" });
   const navigate = useNavigate();
+
 
   const handleChanges = (e) => {
     setformData({
       ...formdata,
       [e.target.name]: e.target.value,
     });
-  };
+  }
 
   const handleSignin = (e) => {
     e.preventDefault();
@@ -30,19 +31,25 @@ const SignIn = () => {
 
     // Check password match
     if (singleUser.password === formdata.password) {
+      console.log("✅ Password matched");
       localStorage.setItem("auth", JSON.stringify(true));
+      setIsAuth(true); 
+
       Swal.fire({
-        title: 'success',
+        title: 'Success',
         text: 'Login successful ✅',
         icon: 'success',
         timer: 2500,
         showConfirmButton: false
-      }).then(()=>{
+      }).then(() => {
+        console.log("🚀 Navigating to /homepage");
         navigate("/homepage");
-      })
+      });
     } else {
+      console.log("❌ Wrong password");
       alert("Wrong password ❌");
     }
+
   };
 
   const handleClose = () => {
