@@ -253,29 +253,33 @@ export default function ProductGrid() {
     const [category, setCategory] = useState("all")
 
     const searchData = products.filter((item) => {
-        const searchbar = item.title.toLowerCase().includes(search.toLowerCase())
-        const categoryoption = category === "all" || it.category === setCategory;
+        const searchbar = item.title.toLowerCase().includes(search.toLowerCase());
+        const categoryoption = category === "all" || item.category === category;
         return searchbar && categoryoption;
     });
 
     return (
         <div className="w-full p-6">
 
-            <div className="flex items-center  border-b pb-4 mb-6">
+            <div className="flex items-center justify-between  border-b pb-4 mb-6">
                 <h2 className="text-2xl font-bold">Our Products</h2>
-                <input
-                    type="text"
-                    placeholder="Search products..."
-                    className="border border-gray-300 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <select
-                    className="border px-3 py-1 rounded" onChange={(e) => setSelectedCategory(e.target.value)}>
-                    <option value="all">All</option>
-                    <option value="electronics">Mens</option>
-                    <option value="accessories">Womens</option>
-                    <option value="accessories">Jwelariy</option>
-                </select>
+                <div className=" ">
+                    <select
+                        className="border px-3 me-4 py-1 rounded-md border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        onChange={(e) => setCategory(e.target.value)}>
+                        <option value="all">All</option>
+                        <option value="men's clothing">Men's Clothing</option>
+                        <option value="women's clothing">Women's Clothing</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="jewelery">Jewelery</option>
+                    </select>
+                    <input
+                        type="text"
+                        placeholder="Search products..."
+                        className="border border-gray-300 rounded-md px-4 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        onChange={(e) => setSearch(e.target.value)}/>
+                </div>
+
 
             </div>
 
