@@ -28,11 +28,14 @@
 
 import React from 'react'
 import Searching from './Component/Searching'
+import BasicsOfApi from './Api/BasicsOfApi'
 
 const App = () => {
   return (
     <div>
-      <Searching />
+      {/* <Searching /> */}
+
+      <BasicsOfApi />
     </div>
   )
 }

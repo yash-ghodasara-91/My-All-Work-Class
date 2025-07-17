@@ -254,16 +254,18 @@ export default function ProductGrid() {
 
     const searchData = products.filter((item) => {
         const searchbar = item.title.toLowerCase().includes(search.toLowerCase());
-        const categoryoption = category === "all" || item.category === category;
+        const categoryoption = category == "all" || item.category == category;
         return searchbar && categoryoption;
     });
 
     return (
         <div className="w-full p-6">
 
-            <div className="flex items-center justify-between  border-b pb-4 mb-6">
+            <div className="flex items-center justify-between md:flex-row flex-col lg:flex-row border-b pb-4 mb-6">
+                <div className="">
                 <h2 className="text-2xl font-bold">Our Products</h2>
-                <div className=" ">
+                </div>
+                <div className=" max-sm:flex flex-col gap-2 mt-3">
                     <select
                         className="border px-3 me-4 py-1 rounded-md border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
                         onChange={(e) => setCategory(e.target.value)}>
@@ -283,18 +285,18 @@ export default function ProductGrid() {
 
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2  gap-8">
 
                 {
                     searchData.map((product) => (
                         <div
                             key={product.id}
-                            className="bg-white shadow-md rounded-xl p-4 border border-gray-200"
+                            className="bg-white  shadow-[0_3px_10px_rgb(0,0,0,0.3)] rounded-xl p-4 border border-gray-200"
                         >
                             <img
                                 src={product.image}
                                 alt={product.title}
-                                className="h-40 w-full object-contain mb-2"
+                                className="h-60 w-full object-contain mb-2"
                             />
                             <h3 className="text-sm font-semibold line-clamp-2">{product.title}</h3>
                             <p className="text-xs text-gray-500 line-clamp-2">{product.description}</p>
